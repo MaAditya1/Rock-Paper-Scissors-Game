@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-image: url('images/background image.jpg'); /* Path to your image */
+    background-size: cover;   /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repeating the image */
+}
+
+
+
+.container{
+    background-color: #081b31;
+    color: #fff;
+    height: 15vmin;
+    text-align: center;
+}
+h1{
+    font-size: 5vmin;
+    text-shadow: 0px 2px 5px white ;
+}
+h2{
+    font-size: 5vmin;
+    margin-top: 2vmin;
+    text-shadow: 0px 2px 5px white ;
+}
+
+
+        /* Middle Box */
+
+.choices{
+    height: 50vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.choice{
+    display: grid;
+    height: 30vmin;
+    width: 30vmin;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 10px solid white;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9),-5px -5px 10px rgba(255, 255, 255, 0.9);
+}
+img{
+    width: 28vmin;
+    height: 28vmin;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.rock {
+    border: 7px solid #c38edc; 
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3),
+                -5px -5px 10px inset rgba(255, 255, 255, 0.9);
+}
+.paper {
+    border: 7px solid #7facff; 
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.3),
+                -5px -5px 10px rgba(255, 255, 255, 0.9);
+}
+.scissors {
+    border: 7px solid #f083a2;
+    box-shadow: 5px 20px 20px rgba(0, 0, 0, 0.3),
+                -5px -5px 10px rgba(255, 255, 255, 0.9);
+}
+h3{
+    font-size: 5vmin;
+    margin-top: 3vmin;
+    text-align: center;
+    text-shadow: 0px 2px 5px black ;
+
+}
+
+        /* Lower Box */
+
+.score-board{
+    height: 40vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.score-1,.score-2{
+    height: 18vmin;
+    width: 18vmin;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    border: 15px solid #aaa;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.9),-5px -5px 10px rgba(255, 255, 255, 0.9);
+
+}
+.score-1{
+    border: 7px solid #c38edc;
+    background-color: #7facff;
+}
+.score-2{
+    border: 7px solid #f083a2;
+    background-color: #c38edc;
+}
+.icon-container{
+    height: 20vmin;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.icon{
+    height: 5vmin;
+    /* width: 4vmin; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 3vmin;
+
+}
+.icon-1{
+    height: 4vmin;
+    width: 4vmin;
+    background-color: blue;
+    border-radius: 50%;
+    border: 5px solid #aaa;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9),-5px -5px 10px rgba(255, 255, 255, 0.9);
+
+}
+.icon-2{
+    height: 4vmin;
+    width: 4vmin;
+    background-color: skyblue;
+    border-radius: 50%;
+    border: 5px solid #aaa;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9),-5px -5px 10px rgba(255, 255, 255, 0.9);
+
+
+}
+.icon-3{
+    height: 4vmin;
+    width: 4vmin;
+    background-color: pink;
+    border-radius: 50%;
+    border: 5px solid #aaa;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.9),-5px -5px 10px rgba(255, 255, 255, 0.9);
+
+}
+.text{
+    font-size: 3.5vmin;
+    color: #0c0c0c;
+    text-shadow: 0px 2px 5px #0c0c0c ;
+    
+}
+
+
+#user-score, #computer-score{
+    margin-top: 0px;
+    font-size: 3rem; 
+}
+#msg{
+    color: #fff;
+    font-size: 1rem;
+    display: inline;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+
+@media (max-width: 600px){
+.choices{
+    height: 40vmin;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.choice{
+    height: 20vmin;
+    width: 20vmin;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+
+}
+img{
+    width: 17vmin;
+    height: 17vmin;
+}
+h3{
+    margin-top: 5vmin;
+    font-size: 2vmin;
+}
+.score-board{
+    gap: 2rem;
+
+}
+.score-1,.score-2{
+    height: 20vmin;
+    width: 20vmin;
+}
+.icon-container{
+    height: 20vmin;
+}
+.icon{
+    height: 3vmin;
+}
+.text{
+    font-size: 1.5vmin;
+}
+#user-score, #computer-score{
+    font-size: 1rem; 
+}
+#msg{
+    font-size: 0.5rem;
+}
+}
+@media (max-width: 300px){
+    .score-1,.score-2{
+        height: 10vmin;
+        width: 10vmin;
+    }
+    .text{
+        font-size: 1.0vmin;
+    }
+    #user-score, #computer-score{
+        font-size: 0.5rem; 
+    }
+    #msg{
+        font-size: 0.2rem;
+    } 
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Rock Papar Scissors</h1>
+        <h2>Game</h2>
+    </div>
+    
+
+    <div class="choices">
+
+        <div class="choice" id="rock">
+            <img src="images/rock.png" alt="Rock img" class="img rock">
+            <h3>ROCK</h3>
+        </div>
+
+        <div class="choice" id="paper">
+            <img src="images/paper.png" alt="Paper img" class="img paper">
+            <h3>PAPER</h3>
+        </div>
+
+        <div class="choice" id="scissors">
+            <img src="images/scissors.png" alt="Scissors img" class="img scissors">
+            <h3>SCISSORS</h3>
+        </div>
+
+    </div>
+
+
+    <div class="score-board">
+
+        <div class="score-1">
+            <p>You</p>
+            <p id="user-score">00</p>
+        </div>
+        
+        <div class="icon-container">
+
+            <div class="icon">
+
+                <div class="icon-1">
+                    <i class="fa-regular fa-hand-back-fist"></i>
+                </div>
+                <div class="icon-2">
+                    <i class="fa-regular fa-hand"></i>
+                </div>
+                <div class="icon-3">
+                    <i class="fa-regular fa-hand-scissors"></i>
+                </div>
+
+            </div>
+
+            <div class="text">
+                <h4>PLAY YOUR TURN</h4> 
+            </div>
+            <div>
+                <p id="msg"> </p>
+            </div>
+
+        </div>
+        
+
+        <div class="score-2">
+            <p>Computer</p>
+            <p id="computer-score">00</p>
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
